@@ -1,2 +1,26 @@
 # OBJ-GSP
-Official implementation of Object-level Geometric Structure Preserving for Natural Image Stitching
+Official implementation of Object-level Geometric Structure Preserving for Natural Image Stitching.
+[arXiv](https://arxiv.org/abs/2402.12677).
+
+## Install
+
+1. Compile Opencv 4.4.0, VLFEAT, Eigen on your machine.
+
+2. Create a new Visual Studio .sln, and add all .cpp and .h files into this .sln.
+
+3. Set HED file paths in EdgeDetection.cpp.
+
+## Datasets
+
+A sample image pair is provided in ./input-data/AANAP-01_skyline. Our proposed dataset will be released soon.
+
+## Citation
+For any questions, please contact russ000robin@gmail.com. 
+```
+@article{cai2024object,
+  title={Object-level Geometric Structure Preserving for Natural Image Stitching},
+  author={Cai, Wenxiao and Yang, Wankou},
+  journal={arXiv preprint arXiv:2402.12677},
+  year={2024}
+}
+```

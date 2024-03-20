@@ -1,0 +1,1 @@
+﻿D:\visual_studio_files\GES-GSP-Stitching-master\Code\GES_Stitching.vcxproj(114,5): error MSB4019: 找不到导入的项目“D:\visual_studio_files\Opencv_Debug.props”。请确认 Import 声明“..\..\Opencv_Debug.props”中的表达式正确，且文件位于磁盘上。
