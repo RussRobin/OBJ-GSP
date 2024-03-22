@@ -298,11 +298,6 @@ void MeshOptimization::prepareSimilarityTerm(vector<Triplet<double> >& _triplets
 	}
 }
 
-/// <summary>
-/// GES term
-/// </summary>
-/// <param name="_triplets"></param>
-/// <param name="_b_vector"></param>
 void MeshOptimization::prepareContentPreservingTerm(vector<Triplet<double> >& _triplets,
 	vector<pair<int, double> >& _b_vector) const {
 	if (content_preserving_equation.second) {

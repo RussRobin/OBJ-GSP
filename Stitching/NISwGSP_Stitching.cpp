@@ -129,13 +129,9 @@ void NISwGSP_Stitching::writeImage(const Mat& _image, const string _blend_method
 
 }
 
-/// <summary>
-/// Assessment
-/// </summary>
 void NISwGSP_Stitching::assessment(const vector<vector<Point2>> original_vertices)
 {
 	double RMSE = getRMSE(original_vertices);
-	//MDR
 	pair<double, double> W_Residual = getWarpingResidual(original_vertices);
 
 }

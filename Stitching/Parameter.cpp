@@ -120,13 +120,6 @@ Parameter::Parameter(const string& _file_name) {
 		cout << "center_image_index = " << center_image_index << endl;
 		cout << "center_image_rotation_angle = " << center_image_rotation_angle << endl;
 		cout << "images_count = " << images_count << endl;
-		/*cout << "images_match_graph_manually = " << endl;
-		for (int i = 0; i < images_match_graph_manually.size(); ++i) {
-			for (int j = 0; j < images_match_graph_manually[i].size(); ++j) {
-				cout << images_match_graph_manually[i][j] << " ";
-			}
-			cout << endl;
-		}*/
 #endif
 	}
 }

@@ -14,6 +14,8 @@ Official implementation of Object-level Geometric Structure Preserving for Natur
 
 A sample image pair is provided in ./input-data/AANAP-01_skyline. Our proposed dataset will be released soon.
 
+## Segment Anything Model Script
+
 ## Citation
 For any questions, please contact russ000robin@gmail.com. 
 ```

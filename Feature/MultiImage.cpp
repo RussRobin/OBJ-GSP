@@ -316,15 +316,11 @@ const vector<vector<vector<Point2> > >& MultiImages::getAPAPMatchingPoints() con
 
 const vector<vector<InterpolateVertex> >& MultiImages::getInterpolateVerticesOfMatchingPoints() const {
 	if (mesh_interpolate_vertex_of_matching_pts.empty()) {
-
 		mesh_interpolate_vertex_of_matching_pts.resize(images_data.size());
-		//images_features[m1] 放m1自己的网格点加上扭曲的m2网格点;images_features[m2] 放m2自己的网格点加上扭曲的m1网格点;
 		const vector<detail::ImageFeatures>& images_features = getImagesFeaturesByMatchingPoints();
 		for (int i = 0; i < mesh_interpolate_vertex_of_matching_pts.size(); ++i) {
-			//第i张图
 			mesh_interpolate_vertex_of_matching_pts[i].reserve(images_features[i].keypoints.size());
 			for (int j = 0; j < images_features[i].keypoints.size(); ++j) {
-				//算出 第i张图像的每个点处于第几个网格点 和 该网格点4个点的权重.
 				mesh_interpolate_vertex_of_matching_pts[i].emplace_back(images_data[i].mesh_2d->getInterpolateVertex(images_features[i].keypoints[j].pt));
 			}
 		}
