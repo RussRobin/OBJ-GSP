@@ -15,6 +15,7 @@ Official implementation of Object-level Geometric Structure Preserving for Natur
 A sample image pair is provided in ./input-data/AANAP-01_skyline. Our proposed dataset will be released soon.
 
 ## Segment Anything Model Script
+Run sam.ipynb to get SAM features and put it in ./ folder.
 
 ## Citation
 For any questions, please contact russ000robin@gmail.com. 

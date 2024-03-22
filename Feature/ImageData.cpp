@@ -158,22 +158,13 @@ const vector<vector<Point>> ImageData::getContentSamplesPoint(vector<double>& we
 	{
 		python_sam = true;
 	}
-	cout << "python_sam "<<python_sam << endl;
 	
 
 	cv::Mat imgRes;
 	cv::Mat sam_im;
-	if (python_sam)
-	{
-		sam_im = cv::imread("sam.png", cv::IMREAD_COLOR);
-		imgRes = sam_im.clone();
 
-	}
-	else
-	{
-		imgRes = img.clone();
-		Mat image4sam = img.clone();
-	}
+	imgRes = img.clone();
+	
 
 	Mat gray;
 	cvtColor(imgRes, gray, COLOR_BGR2GRAY);
@@ -181,15 +172,8 @@ const vector<vector<Point>> ImageData::getContentSamplesPoint(vector<double>& we
 
 	resize(imgRes, image, cv::Size(500, 500 * (double)imgRes.rows / imgRes.cols));
 
-	if (python_sam)
-	{
-		 edgeDetection(image, image, HED_THRESHOLD);
-	}
-	else
-	{
-		edgeDetection(image, image, HED_THRESHOLD);
-	}
-
+	edgeDetection(image, image, HED_THRESHOLD);
+	
 	resize(image, image, Size(imgRes.cols, imgRes.rows));
 	
 	thin(image, image, (double)imgRes.cols / 500);
@@ -209,7 +193,6 @@ const vector<vector<Point>> ImageData::getContentSamplesPoint(vector<double>& we
 		cv::Mat(),
 		block_size,
 		use_harris);
-	//4.2 Delete corner pixels
 	Point2f itemPoint;
 	Rect roi;
 	roi.width = 8;
@@ -232,7 +215,7 @@ const vector<vector<Point>> ImageData::getContentSamplesPoint(vector<double>& we
 	vector<Vec4i> hierarchy;
 	findContours(image, contours, hierarchy, RETR_EXTERNAL, CHAIN_APPROX_NONE, Point()); 
 	cv::Mat image_with_contours = cv::Mat::zeros(image.size(), CV_8UC3);
-	cv::drawContours(image_with_contours, contours, -1, cv::Scalar(255, 255, 255), 1); // white contour, thickness=1, Draw the contours on the blank image
+	cv::drawContours(image_with_contours, contours, -1, cv::Scalar(255, 255, 255), 1); 
 	
 	vector<Vec4f> lines = findLine(gray);
 	transLines2Contours(contours, lines);
@@ -269,7 +252,7 @@ const vector<vector<Point>> ImageData::getContentSamplesPoint(vector<double>& we
 
 	if (python_sam)
 	{
-		int margin = 0; // if a point is too close to image margin, erase it
+		int margin = 0; 
 		std::ifstream file("contour_coords.txt");
 		if (!file.is_open()) {
 			std::cerr << "Failed to open file." << std::endl;
@@ -312,7 +295,6 @@ const vector<vector<Point>> ImageData::getContentSamplesPoint(vector<double>& we
 			}
 		}
 
-		// Add the last contour if any
 		if (!current_contour.empty() ) {
 			contour_coords_vectors.push_back(current_contour);
 		}
