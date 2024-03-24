@@ -4,7 +4,7 @@ Official implementation of Object-level Geometric Structure Preserving for Natur
 
 ## Install
 
-1. Compile Opencv 4.4.0, VLFEAT, Eigen on your machine.
+1. Compile Opencv 4.4.0, VLFEAT and Eigen on your machine.
 
 2. Create a new Visual Studio .sln, and add all .cpp and .h files into this .sln.
 
@@ -15,7 +15,8 @@ Official implementation of Object-level Geometric Structure Preserving for Natur
 A sample image pair is provided in ./input-data/AANAP-01_skyline. Our proposed dataset will be released soon.
 
 ## Segment Anything Model Script
-Run sam.ipynb to get SAM features and put it in ./ folder.
+Run .sln and you will find 0-original.png in the ./ folder.
+Upload the image to Google Colab and run sam.ipynb to get SAM features and put it in ./ folder.
 
 ## Citation
 For any questions, please contact russ000robin@gmail.com. 
