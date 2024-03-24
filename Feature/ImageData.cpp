@@ -164,6 +164,8 @@ const vector<vector<Point>> ImageData::getContentSamplesPoint(vector<double>& we
 	cv::Mat sam_im;
 
 	imgRes = img.clone();
+	imwrite("0-original.png", imgRes);
+
 	
 
 	Mat gray;
