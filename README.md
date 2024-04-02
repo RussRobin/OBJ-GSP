@@ -1,6 +1,6 @@
 # OBJ-GSP
 Official implementation of Object-level Geometric Structure Preserving for Natural Image Stitching.
-[arXiv](https://arxiv.org/abs/2402.12677).
+[[arXiv](https://arxiv.org/abs/2402.12677)].
 
 ## Install
 
