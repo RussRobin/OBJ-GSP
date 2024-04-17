@@ -19,7 +19,7 @@ Run .sln and you will find 0-original.png in the ./ folder.
 Upload the image to Google Colab and run sam.ipynb to get SAM features and put it in ./ folder.
 
 ## Citation
-For any questions, please contact russ000robin@gmail.com. 
+For any questions, please feel free to start an issue.
 ```
 @article{cai2024object,
   title={Object-level Geometric Structure Preserving for Natural Image Stitching},
