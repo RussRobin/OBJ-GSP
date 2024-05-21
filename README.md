@@ -4,7 +4,7 @@ Official implementation of Object-level Geometric Structure Preserving for Natur
 
 ## Install
 
-1. Compile Opencv 4.4.0, VLFEAT and Eigen on your machine.
+1. Compile Opencv 4.4.0, VLFEAT and Eigen locally.
 
 2. Create a new Visual Studio .sln, and add all .cpp and .h files into this .sln.
 
