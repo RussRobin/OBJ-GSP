@@ -1,4 +1,6 @@
-# OBJ-GSP
+<h1 align = "center">
+  OBJ-GSP
+</h1>
 
 <p align="center">
     <a href="https://arxiv.org/abs/2402.12677">
@@ -16,16 +18,18 @@ Official implementation of "Object-level Geometric Structure Preserving for Natu
 
 3. Set HED file paths in ```EdgeDetection.cpp```.
 
-## Datasets
+## StitchBench
 
-A sample image pair is provided in ```./input-data/AANAP-01_skyline```. Our proposed dataset will be released soon.
+StitchBench is by far the most comprehensive image stitching dataset.
+A sample image pair is provided in ```./input-data/AANAP-01_skyline```. 
+StitchBench will be released soon.
 
 ## Segment Anything Model Script
-Run .sln and you will find 0-original.png in the ```./``` folder.
+Run ```.sln``` and you will find 0-original.png in the ```./``` folder.
 Upload the image to Google Colab and run sam.ipynb to get SAM features and put it in ./ folder.
 
 ## Usage
-For any questions, please feel free to start an issue.
+For any questions, please feel free to open an issue.
 ```
 @article{cai2024object,
   title={Object-level Geometric Structure Preserving for Natural Image Stitching},
