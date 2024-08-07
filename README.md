@@ -4,7 +4,10 @@
 
 <p align="center">
     <a href="https://arxiv.org/abs/2402.12677">
-        <img alt="Paper" src="http://img.shields.io/badge/Paper-arXiv%3A2406.13642-B31B1B.svg">
+        <img alt="Paper" src="http://img.shields.io/badge/Paper-arXiv%3A2402.12677-B31B1B.svg">
+    </a>
+    <a href="https://huggingface.co/datasets/RussRobin/StitchBench">
+        <img alt="Benchmark" src="https://img.shields.io/badge/🤗%20Benchmark-StitchBench-blue">
     </a>
 </p>
 
