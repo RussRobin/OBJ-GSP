@@ -25,7 +25,7 @@ Official implementation of "Object-level Geometric Structure Preserving for Natu
 
 StitchBench is by far the most comprehensive image stitching dataset.
 A sample image pair is provided in ```./input-data/AANAP-01_skyline```. 
-StitchBench will be released soon.
+StitchBench will be open-sourced upon publication of our paper. [HuggingFace](https://huggingface.co/datasets/RussRobin/StitchBench)
 
 ## Segment Anything Model Script
 Run ```.sln``` and you will find 0-original.png in the ```./``` folder.
