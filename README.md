@@ -1,5 +1,5 @@
 <h1 align = "center">
-  OBJ-GSP
+OBJ-GSP (AAAI 2025)
 </h1>
 
 <p align="center">
@@ -14,7 +14,8 @@
     </a>
 </p>
 
-Official implementation of "Object-level Geometric Structure Preserving for Natural Image Stitching".
+
+Official implementation of *AAAI 2025* paper "Object-level Geometric Structure Preserving for Natural Image Stitching".
 
 ## Install
 
@@ -28,15 +29,15 @@ Official implementation of "Object-level Geometric Structure Preserving for Natu
 
 StitchBench is by far the most comprehensive image stitching dataset.
 A sample image pair is provided in ```./input-data/AANAP-01_skyline```. 
-StitchBench will be open-sourced upon publication of our paper. 
-[HuggingFace](https://huggingface.co/datasets/RussRobin/StitchBench).
+StitchBench is available at: 
+[HuggingFace](https://huggingface.co/datasets/RussRobin/StitchBench). You will be automatically granted access to it.
 
 ## Aerial234
 Aerial234 is a open-source dataset of 234 aerial images for image stitching.
 We used a drone to continuously scan an area of Southeast University and collected this dataset. 
 It’s quite a challenging dataset, and we’re curious if there’s a method to stitch these 234 aerial images into a single panorama.
 
-Dataset available at: [HuggingFace](https://huggingface.co/datasets/RussRobin/Aerial234).
+Aerial234 is available at: [HuggingFace](https://huggingface.co/datasets/RussRobin/Aerial234).
 
 Our work on aerial image stiching (just a preliminary attempt): 
 [UAV image stitching by estimating orthograph with RGB cameras](https://www.sciencedirect.com/science/article/pii/S1047320323000858).
