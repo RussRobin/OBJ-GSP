@@ -68,3 +68,5 @@ For any questions, please feel free to open an issue.
   url={https://api.semanticscholar.org/CorpusID:258424154}
 }
 ```
+
+We appreciate AAAI for providing Student Scholarship for this paper!
