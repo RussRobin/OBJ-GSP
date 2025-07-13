@@ -52,23 +52,26 @@ Upload the image to Google Colab and run sam.ipynb to get SAM features and put i
 ## Usage
 For any questions, please feel free to open an issue.
 ```
-@article{cai2024object,
-  title={Object-level Geometric Structure Preserving for Natural Image Stitching},
+@inproceedings{cai2025object,
+  title={Object-level geometric structure preserving for natural image stitching},
   author={Cai, Wenxiao and Yang, Wankou},
-  journal={arXiv preprint arXiv:2402.12677},
-  year={2024}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={2},
+  pages={1926--1934},
+  year={2025}
 }
 ```
 
 ```
-@article{Cai2023UAVIS,
+@article{cai2023uav,
   title={UAV image stitching by estimating orthograph with RGB cameras},
-  author={Wenxiao Cai and Songlin Du and Wankou Yang},
-  journal={J. Vis. Commun. Image Represent.},
-  year={2023},
+  author={Cai, Wenxiao and Du, Songlin and Yang, Wankou},
+  journal={Journal of Visual Communication and Image Representation},
   volume={94},
   pages={103835},
-  url={https://api.semanticscholar.org/CorpusID:258424154}
+  year={2023},
+  publisher={Elsevier}
 }
 ```
 
