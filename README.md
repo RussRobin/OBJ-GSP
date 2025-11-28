@@ -31,8 +31,8 @@ Official implementation of *AAAI 2025* paper "Object-level Geometric Structure P
 ## StitchBench
 
 StitchBench is by far the most comprehensive image stitching dataset.
-A sample image pair is provided in ```./input-data/AANAP-01_skyline```. 
-StitchBench is available at: 
+A sample image pair is provided in this GitHub repo at ```./input-data/AANAP-01_skyline```. 
+StitchBench images and download instructions are available at: 
 [HuggingFace](https://huggingface.co/datasets/RussRobin/StitchBench). You will be automatically granted access to it.
 
 ## Aerial234
