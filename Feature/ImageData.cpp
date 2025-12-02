@@ -928,8 +928,10 @@ void transLines2Contours(vector<vector<Point>>& contours, vector<Vec4f> lines) {
 }
 
 pair<double, double> transRectangular2Polar(Vec4f line, int image_width, int image_height) {
-	line[3] = line[3] - image_width / 2;
-	line[4] = image_height / 2 - line[4];
+	// line[3] = line[3] - image_width / 2;
+	// line[4] = image_height / 2 - line[4];
+	line[2] = line[2] - image_width / 2;
+	line[3] = image_height / 2 - line[3];
 
 	if (abs(line[0]) < 1e-5) {
 		if (line[2] > 0)
