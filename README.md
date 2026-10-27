@@ -37,12 +37,12 @@ StitchBench images and download instructions are available at:
 
 ## Aerial234
 Aerial234 is a open-source dataset of 234 aerial images for image stitching.
-We used a drone to continuously scan an area of Southeast University and collected this dataset. 
+We used a drone flying at an approximate altitude of 120m to continuously scan an area and collect this dataset.
 It’s quite a challenging dataset, and we’re curious if there’s a method to stitch these 234 aerial images into a single panorama.
 
-Aerial234 is available at: [HuggingFace](https://huggingface.co/datasets/RussRobin/Aerial234).
+Aerial234 is available at [HuggingFace](https://huggingface.co/datasets/RussRobin/Aerial234).
 
-Our work on aerial image stiching (just a preliminary attempt): 
+Our work on aerial image stiching (a preliminary attempt): 
 [UAV image stitching by estimating orthograph with RGB cameras](https://www.sciencedirect.com/science/article/pii/S1047320323000858).
 
 ## Segment Anything Model Script
@@ -75,4 +75,4 @@ For any questions, please feel free to open an issue.
 }
 ```
 
-We appreciate AAAI for providing Student Scholarship for this paper!
+We gratefully acknowledge AAAI for providing a Student Scholarship in support of this paper.
